@@ -6,8 +6,8 @@ if len(sys.argv) > 1:
 	idacc = sys.argv[1]
 
 	#account 
-	uid = '#email'
-	pid = '#password'
+	uid = '#email'.encode('hex')
+	pid = '#password'.encode('hex')
 	try:
 		#create chrome
 		driver = webdriver.Chrome('/media/kv/Data/python/webdriver/chromedriver')
